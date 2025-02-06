@@ -1,0 +1,143 @@
+/* General Styles */
+body {
+  background-color: #ebd7ff;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Reset Default Margins and Padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Navbar */
+.nav {
+  height: 70px;
+  background-color: #ec4a4a;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px;
+  color: white;
+}
+
+/* Logo */
+#logo h2 {
+  margin: 0;
+}
+
+/* User Profile */
+#user {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.profile img {
+  border-radius: 50%;
+  height: 45px;
+  width: 45px;
+}
+
+/* Main Content Layout */
+#content {
+  display: flex;
+  justify-content: flex-start; /* Align to left side */
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Restaurant Info */
+#head {
+  width: 75%;
+  background-color: #332323;
+  padding: 20px;
+  color: white;
+  border-radius: 8px;
+}
+
+.hname {
+  margin-bottom: 7px;
+}
+
+.aname {
+  margin-top: 2px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Order Items */
+#items {
+  margin-top: 20px;
+  padding-left: 20px;
+}
+
+#items h2 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/* Side Panel (Cart) */
+#panel {
+  width: 25%;
+  min-height: 100vh;
+  background-color: gainsboro;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 15px rgba(40, 62, 83, 0.1);
+  margin-left: auto; /* This will push it to the right side */
+}
+
+/* Cart Section */
+#right-in {
+  padding: 20px;
+}
+
+#right {
+  background: #e9e6ec;
+  padding: 20px;
+  font-size: 18px;
+  box-shadow: 0px 0px 15px rgba(40, 62, 83, 0.1);
+}
+
+/* Cart Item */
+#pitem {
+  padding: 15px 0;
+  color: darkslategray;
+  border-bottom: 1px solid gray;
+  font-size: 15px;
+}
+
+/* Pay Button */
+#pay {
+  width: 100%;
+  height: 40px;
+  margin-top: 15px;
+  background-color: #ec4a4a;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+#pay:hover {
+  background-color: #c93c3c;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  #content {
+      flex-direction: column; /* Stack items vertically on smaller screens */
+  }
+
+  #panel {
+      width: 100%;  /* Make the cart take full width in small screens */
+      min-height: auto;
+      margin-left: 0;  /* Reset margin on small screens */
+  }
+}
+

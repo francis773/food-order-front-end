@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Akronim&display=swap');
+
+body {
+  width: 100%;
+  height: 100%;
+  font-family: 'Nunito', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+#container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#id1 {
+  flex: 1;
+  overflow: hidden;
+}
+
+#id1 img {
+  width: 100%;
+  height: auto;
+}
+
+#id2 {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+#logoApp {
+  font-size: 60px;
+  color: #ec4a4a;
+  font-family: 'Akronim', cursive;
+  padding: 100px 0;
+}
+
+#input {
+  width: 100%;
+  max-width: 400px;
+  padding: 10px;
+  border-color: black;
+  margin: 6px 0;
+  border-radius: 30px;
+  border-width: 0.1rem;
+  height: 40px;
+}
+
+#btn {
+  width: 100%;
+  max-width: 400px;
+  height: 40px;
+  font-size: 17px;
+  background-color: #ec4a4a;
+  border-color: #ec4a4a;
+  color: white;
+  border-radius: 25px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+span {
+  margin-top: 10px;
+}
+
+a {
+  color: #ec4a4a;
+  text-decoration: none;
+}
+
